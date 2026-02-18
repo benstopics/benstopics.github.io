@@ -77,6 +77,28 @@
       color: #8b949e;
     }
 
+    /* About */
+    .about ul {
+      list-style: none;
+      margin-top: 0.5rem;
+      padding: 0;
+    }
+
+    .about li {
+      color: #8b949e;
+      padding-left: 1.25rem;
+      position: relative;
+      margin-bottom: 0.25rem;
+    }
+
+    .about li::before {
+      content: "·";
+      position: absolute;
+      left: 0.25rem;
+      color: #484f58;
+      font-weight: bold;
+    }
+
     /* Projects */
     .projects ul {
       list-style: none;
@@ -125,16 +147,13 @@
 
     <section class="about">
       <h2>About</h2>
-      <p>
-        I am obsessed with:
-        <ul>
-          <li>Old programming languages and parsing data</li>
-          <li>Financial simulators</li>
-          <li>Manufacturing</li>
-          <li>AI orchestration</li>
-          <li></li>
-        </ul>
-      </p>
+      <p>I am obsessed with:</p>
+      <ul>
+        <li>Old programming languages and parsing data</li>
+        <li>Financial simulators</li>
+        <li>Manufacturing</li>
+        <li>AI orchestration</li>
+      </ul>
     </section>
 
     <section class="projects">
