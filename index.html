@@ -42,10 +42,9 @@
     }
 
     .header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
+      border-radius: 0.5rem;
       object-fit: cover;
+      object-position: center 25%;
       margin-bottom: 1rem;
     }
 
@@ -84,11 +83,27 @@
     }
 
     .projects li {
-      margin-bottom: 0.75rem;
+      margin-bottom: 2rem;
     }
 
     .projects li span {
       color: #8b949e;
+    }
+
+    .project-img {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      border-radius: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.25rem;
+      font-size: 0.9rem;
     }
 
     /* Links */
@@ -103,7 +118,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <img src="benward.png" alt="Benjamin Ward" width="120" height="120">
+      <img src="benward.png" alt="Benjamin Ward" width="120" height="152">
       <h1>Benjamin Ward</h1>
       <p class="tagline">Software Engineer</p>
     </header>
@@ -120,16 +135,33 @@
       <h2>Projects</h2>
       <ul>
         <li>
-          <a href="https://github.com/bward">benjaminward.com</a>
-          <span> — This site. Plain HTML, no frameworks, dark theme.</span>
+          <a href="https://store.steampowered.com/app/3525620/Wall_Street_Raider/">Wall Street Raider</a>
+          <span> — Remastering the classic 1986 financial simulation for Steam. Early Access March 2026.</span>
+          <img class="project-img" src="wsr-banner.jpg" alt="Wall Street Raider banner">
+          <img class="project-img" src="wsr-snapshot.png" alt="Wall Street Raider gameplay screenshot">
+          <div class="project-links">
+            <a href="https://store.steampowered.com/app/3525620/Wall_Street_Raider/">Steam</a>
+            <a href="https://github.com/benstopics/wallstreetraider-electron/">Open-Source UI (GitHub)</a>
+          </div>
         </li>
         <li>
-          <a href="https://github.com/bward">Project Two</a>
-          <span> — Description of another project you've built.</span>
+          <a href="https://github.com/benstopics/powerbasilisk">PowerBasilisk</a>
+          <span> — Developing an open-source PowerBASIC compiler in Rust, targeting LLVM.</span>
+          <img class="project-img" src="powerbasilisk-hero.png" alt="PowerBasilisk hero art">
         </li>
         <li>
-          <a href="https://github.com/bward">Project Three</a>
-          <span> — Description of yet another project.</span>
+          <a href="https://samedayfab.com">SameDayFab</a>
+          <span> — Building an instant online quoting platform for custom sheet metal fabrication.</span>
+          <img class="project-img" src="samedayfab.png" alt="SameDayFab sheet metal quoting interface">
+        </li>
+        <li>
+          <a href="https://github.com/benstopics/cca-pico8">Colossal Cave Adventure</a>
+          <span> — Ported the 1976 text adventure from FORTRAN to Lua for the PICO-8 fantasy console.</span>
+          <img class="project-img" src="pico8_advent1976-0.png" alt="Colossal Cave Adventure PICO-8 screenshot">
+          <div class="project-links">
+            <a href="https://www.lexaloffle.com/bbs/?tid=50561">Play on Lexaloffle</a>
+            <a href="https://github.com/benstopics/cca-pico8">GitHub</a>
+          </div>
         </li>
       </ul>
     </section>
